@@ -45,7 +45,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(224, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(325, 36);
+            this.label1.Size = new System.Drawing.Size(267, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome to T Agency";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -78,7 +78,7 @@
             // 
             // Admin2
             // 
-            this.Admin2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Admin2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Admin2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Admin2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Admin2.Location = new System.Drawing.Point(207, 330);
@@ -92,7 +92,7 @@
             // 
             // Manager2
             // 
-            this.Manager2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Manager2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Manager2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Manager2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Manager2.Location = new System.Drawing.Point(356, 330);
@@ -106,7 +106,7 @@
             // 
             // Admin1
             // 
-            this.Admin1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Admin1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Admin1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Admin1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Admin1.Location = new System.Drawing.Point(207, 201);
@@ -120,7 +120,7 @@
             // 
             // Manager1
             // 
-            this.Manager1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Manager1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Manager1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Manager1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Manager1.Location = new System.Drawing.Point(356, 201);
@@ -147,7 +147,7 @@
             // 
             // Welcome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(748, 445);

@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin page.Designer.cs">
+      <DependentUpon>Admin page.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin_reg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,12 @@
     <Compile Include="login_M.Designer.cs">
       <DependentUpon>login_M.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manager_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_page.Designer.cs">
+      <DependentUpon>Manager_page.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manager_reg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +88,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin page.resx">
+      <DependentUpon>Admin page.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin_reg.resx">
       <DependentUpon>Admin_reg.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="login_M.resx">
       <DependentUpon>login_M.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_page.resx">
+      <DependentUpon>Manager_page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manager_reg.resx">
       <DependentUpon>Manager_reg.cs</DependentUpon>
