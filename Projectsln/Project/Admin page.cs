@@ -16,8 +16,19 @@ namespace Project
         {
             InitializeComponent();
         }
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if (e.CloseReason != CloseReason.WindowsShutDown)
+                Application.Exit();
+        }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Admin_page_Load(object sender, EventArgs e)
         {
 
         }

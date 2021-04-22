@@ -43,8 +43,40 @@ namespace Project
 
         private void Submit_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new Admin_page().Show();
+            string uname = username.Text;
+            string pass = password.Text;
+
+            string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
+            SqlConnection conn = new SqlConnection(connString);
+            try
+            {
+                conn.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            string query = string.Format("select * from Admin where Username='{0}' and Password='{1}'", uname, pass);
+            try
+            {
+                SqlCommand cmd = new SqlCommand(query, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+
+                    this.Hide();
+                    new Manager_page().Show();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid user!!!!!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            conn.Close();
         }
     }
 }
