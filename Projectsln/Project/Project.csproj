@@ -81,6 +81,12 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="GuideAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideAdd.Designer.cs">
+      <DependentUpon>GuideAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="login_A.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,12 @@
     <Compile Include="Manager Page.Designer.cs">
       <DependentUpon>Manager Page.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manager page1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager page1.Designer.cs">
+      <DependentUpon>Manager page1.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManagerS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +125,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REGISTRATIONam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTRATIONam.Designer.cs">
+      <DependentUpon>REGISTRATIONam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tour_guide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tour_guide.Designer.cs">
+      <DependentUpon>Tour_guide.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin page.resx">
       <DependentUpon>Admin page.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +155,9 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GuideAdd.resx">
+      <DependentUpon>GuideAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login_A.resx">
       <DependentUpon>login_A.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Manager Page.resx">
       <DependentUpon>Manager Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager page1.resx">
+      <DependentUpon>Manager page1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerS.resx">
       <DependentUpon>ManagerS.cs</DependentUpon>
@@ -156,6 +186,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="REGISTRATIONam.resx">
+      <DependentUpon>REGISTRATIONam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tour_guide.resx">
+      <DependentUpon>Tour_guide.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

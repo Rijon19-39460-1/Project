@@ -33,11 +33,11 @@ namespace Project
 
         }
 
-        private void Registration_Click(object sender, EventArgs e)
+        /*private void Registration_Click(object sender, EventArgs e)
         {
             Admin2.Visible = true;
             Manager2.Visible = true;
-        }
+        }*/
 
         private void Login_Click(object sender, EventArgs e)
         {               
@@ -55,8 +55,6 @@ namespace Project
         {
             Admin3.Visible = false;
             Manager3.Visible = false;
-            Admin2.Visible = false;
-            Manager2.Visible = false;
             Admin1.Visible = false;
             Manager1.Visible = false;
         }
@@ -95,6 +93,12 @@ namespace Project
         {
             this.Hide();
             new ManagerS().Show();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            new REGISTRATIONam().Show();
         }
     }
 }
