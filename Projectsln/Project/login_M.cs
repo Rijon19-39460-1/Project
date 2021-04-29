@@ -76,5 +76,17 @@ namespace Project
             }
             conn.Close();
         }
+
+        private void ck1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ck1.Checked == true)
+            {
+                password.UseSystemPasswordChar = false;
+            }
+            else if (ck1.Checked == false)
+            {
+                password.UseSystemPasswordChar = true;
+            }
+        }
     }
 }
