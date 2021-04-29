@@ -46,7 +46,8 @@ namespace Project
             string uname = username.Text;
             string pass = password.Text;
 
-            string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
+            //string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
+            string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
             SqlConnection conn = new SqlConnection(connString);
             try
             {

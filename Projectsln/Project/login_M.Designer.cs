@@ -56,7 +56,7 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button2.Location = new System.Drawing.Point(142, 193);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(95, 37);
             this.button2.TabIndex = 16;
@@ -70,7 +70,7 @@
             this.Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Back.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Back.Location = new System.Drawing.Point(142, 236);
-            this.Back.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Back.Margin = new System.Windows.Forms.Padding(2);
             this.Back.Name = "Back";
             this.Back.Size = new System.Drawing.Size(95, 37);
             this.Back.TabIndex = 15;
@@ -82,7 +82,7 @@
             // 
             this.password.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.password.Location = new System.Drawing.Point(118, 138);
-            this.password.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.password.Margin = new System.Windows.Forms.Padding(2);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(201, 23);
             this.password.TabIndex = 14;
@@ -92,7 +92,7 @@
             // 
             this.username.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.username.Location = new System.Drawing.Point(118, 103);
-            this.username.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.username.Margin = new System.Windows.Forms.Padding(2);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(201, 23);
             this.username.TabIndex = 13;
@@ -132,7 +132,7 @@
             this.Controls.Add(this.username);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label14);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LManager";
             this.Text = "LOGIN";
             this.ResumeLayout(false);

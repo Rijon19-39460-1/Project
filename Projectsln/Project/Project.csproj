@@ -56,11 +56,24 @@
     <Compile Include="Admin_reg.Designer.cs">
       <DependentUpon>Admin_reg.cs</DependentUpon>
     </Compile>
+    <Compile Include="Customer1.cs" />
+    <Compile Include="Customer_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_add.Designer.cs">
+      <DependentUpon>Customer_add.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="login_A.cs">
       <SubType>Form</SubType>
@@ -74,11 +87,11 @@
     <Compile Include="login_M.Designer.cs">
       <DependentUpon>login_M.cs</DependentUpon>
     </Compile>
-    <Compile Include="Manager_page.cs">
+    <Compile Include="Manager Page.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Manager_page.Designer.cs">
-      <DependentUpon>Manager_page.cs</DependentUpon>
+    <Compile Include="Manager Page.Designer.cs">
+      <DependentUpon>Manager Page.cs</DependentUpon>
     </Compile>
     <Compile Include="Manager_reg.cs">
       <SubType>Form</SubType>
@@ -94,8 +107,14 @@
     <EmbeddedResource Include="Admin_reg.resx">
       <DependentUpon>Admin_reg.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Customer_add.resx">
+      <DependentUpon>Customer_add.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login_A.resx">
       <DependentUpon>login_A.cs</DependentUpon>
@@ -103,8 +122,8 @@
     <EmbeddedResource Include="login_M.resx">
       <DependentUpon>login_M.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Manager_page.resx">
-      <DependentUpon>Manager_page.cs</DependentUpon>
+    <EmbeddedResource Include="Manager Page.resx">
+      <DependentUpon>Manager Page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manager_reg.resx">
       <DependentUpon>Manager_reg.cs</DependentUpon>

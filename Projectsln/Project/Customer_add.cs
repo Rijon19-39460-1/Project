@@ -12,9 +12,9 @@ using System.Collections;
 
 namespace Project
 {
-    public partial class LManager : Form
+    public partial class CustomerInfo : Form
     {
-        public LManager()
+        public CustomerInfo()
         {
             InitializeComponent();
         }
@@ -25,56 +25,67 @@ namespace Project
                 Application.Exit();
         }
 
-        private void Back_Click(object sender, EventArgs e)
+        private void btnAdd_Click (object sender, EventArgs e)
         {
-            this.Hide();
-            new Welcome().Show();
-        }
+            
+            string cname = tbCName.Text;
+            string pid = tbPId.Text;
+            string pname = tbPName.Text;
+            string cphone = tbCPhone.Text;
+            string cemail = tbCEmail.Text;
+            string ptime = dtpPTime.Text;
 
-        private void button2_Click(object sender, EventArgs e)
-        {
+            int id = Convert.ToInt32(pid);
 
-        }
-
-        
-
-        private void submit_Click(object sender, EventArgs e)
-        {
-            string uname = username.Text;
-            string pass = password.Text;
-
-            //string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
             string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
             SqlConnection conn = new SqlConnection(connString);
-            try
+            
+            try 
             {
+
                 conn.Open();
+
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            string query = string.Format("select * from Manager where Username='{0}' and Password='{1}' ", uname, pass);
+
+            string query = string.Format("insert into Customer values ('{0}','{1}','{2}','{3}','{4}','{5}')", cname,pname, id, cphone, cemail, ptime);
+
             try
             {
-                SqlCommand cmd = new SqlCommand(query, conn);
-                SqlDataReader reader = cmd.ExecuteReader();
-                if (reader.Read())
-                {
 
-                    this.Hide();
-                    new Manager_page().Show();
+                SqlCommand cmd = new SqlCommand(query,conn);
+                int r = cmd.ExecuteNonQuery();
+
+                if (r > 0)
+                {
+                    MessageBox.Show("Customer Information inserted");
                 }
                 else
                 {
-                    MessageBox.Show("Invalid user!!!!!");
+                    MessageBox.Show("Failed to insert customer information");
                 }
+
             }
+
+
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+
             conn.Close();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Manager_page().Show();
+        }
+
+
+        
     }
 }
