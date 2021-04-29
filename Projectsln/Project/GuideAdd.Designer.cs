@@ -66,6 +66,7 @@
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(156, 20);
             this.tbEmail.TabIndex = 3;
+            this.tbEmail.TextChanged += new System.EventHandler(this.tbEmail_TextChanged);
             // 
             // label2
             // 
@@ -83,6 +84,7 @@
             this.tbAddress.Name = "tbAddress";
             this.tbAddress.Size = new System.Drawing.Size(156, 20);
             this.tbAddress.TabIndex = 5;
+            this.tbAddress.TextChanged += new System.EventHandler(this.tbAddress_TextChanged);
             // 
             // label3
             // 
@@ -100,6 +102,7 @@
             this.tbPhn.Name = "tbPhn";
             this.tbPhn.Size = new System.Drawing.Size(156, 20);
             this.tbPhn.TabIndex = 9;
+            this.tbPhn.TextChanged += new System.EventHandler(this.tbPhn_TextChanged);
             // 
             // label5
             // 
@@ -117,6 +120,7 @@
             this.tbCID.Name = "tbCID";
             this.tbCID.Size = new System.Drawing.Size(157, 20);
             this.tbCID.TabIndex = 11;
+            this.tbCID.TextChanged += new System.EventHandler(this.tbCID_TextChanged);
             // 
             // label4
             // 

@@ -12,9 +12,9 @@ using System.Collections;
 
 namespace Project
 {
-    public partial class ManagerS : Form
+    public partial class Gshow : Form
     {
-        public ManagerS()
+        public Gshow()
         {
             InitializeComponent();
         }
@@ -25,25 +25,13 @@ namespace Project
                 Application.Exit();
         }
 
-
-        private void ManagerS_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            new Welcome().Show();
-        }
-
-        private void btnLoad_Click(object sender, EventArgs e)
-        {
-            //string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
+             //string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
             //string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
             string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
             SqlConnection conn = new SqlConnection(connString);
-            List<Mshow> Manager = new List<Mshow>();
+            List<GuideS> Guide = new List<GuideS>();
             try
             {
                 conn.Open();
@@ -52,7 +40,7 @@ namespace Project
             {
                 MessageBox.Show(ex.Message);
             }
-            string query = "select * from Manager";
+            string query = "select * from Guide";
             try
             {
             SqlCommand cmd = new SqlCommand(query, conn);
@@ -60,18 +48,15 @@ namespace Project
 
             while (reader.Read())
             {
-                Mshow m = new Mshow();
-                m.Id = reader.GetInt32(reader.GetOrdinal("Id"));
-                m.Fname = reader.GetString(reader.GetOrdinal("Fname"));
-                m.Lname = reader.GetString(reader.GetOrdinal("Lname"));
-                m.Full_name = reader.GetString(reader.GetOrdinal("Full_name"));
-                m.Gender = reader.GetString(reader.GetOrdinal("Gender"));
-                m.DOB = reader.GetString(reader.GetOrdinal("DOB"));
-                m.Nationality = reader.GetString(reader.GetOrdinal("Nationality"));
-                m.Address = reader.GetString(reader.GetOrdinal("Address"));
-                m.Phone = reader.GetString(reader.GetOrdinal("Phone"));
-                m.Email = reader.GetString(reader.GetOrdinal("Email"));
-                Manager.Add(m);
+                GuideS GS= new GuideS();
+                GS.Tour_guide_id = reader.GetInt32(reader.GetOrdinal("Tour_guide_id"));
+                GS.Tour_guide_name = reader.GetString(reader.GetOrdinal("Tour_guide_name"));
+                GS.Tour_guide_email = reader.GetString(reader.GetOrdinal("Tour_guide_email"));
+                GS.Tour_guide_address = reader.GetString(reader.GetOrdinal("Tour_guide_address"));
+                GS.Tour_guide_phn = reader.GetString(reader.GetOrdinal("Tour_guide_phn"));
+                GS.Customer_id = reader.GetString(reader.GetOrdinal("Customer_id"));
+               
+                Guide.Add(GS);
             }
             }
             catch (Exception ex)
@@ -79,7 +64,14 @@ namespace Project
                 MessageBox.Show(ex.Message);
             }
             conn.Close();
-            dtM.DataSource = Manager;
+            Dtg.DataSource = Guide;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Tour_guide().Show();
+        }
         }
     }
-}
+

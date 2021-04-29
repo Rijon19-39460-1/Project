@@ -82,11 +82,24 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gshow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gshow.Designer.cs">
+      <DependentUpon>Gshow.cs</DependentUpon>
+    </Compile>
     <Compile Include="GuideAdd.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GuideAdd.Designer.cs">
       <DependentUpon>GuideAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuideS.cs" />
+    <Compile Include="InformationUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformationUpdate.Designer.cs">
+      <DependentUpon>InformationUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="login_A.cs">
       <SubType>Form</SubType>
@@ -157,8 +170,14 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Gshow.resx">
+      <DependentUpon>Gshow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GuideAdd.resx">
       <DependentUpon>GuideAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationUpdate.resx">
+      <DependentUpon>InformationUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login_A.resx">
       <DependentUpon>login_A.cs</DependentUpon>

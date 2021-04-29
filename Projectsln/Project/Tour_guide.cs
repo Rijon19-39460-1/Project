@@ -23,5 +23,17 @@ namespace Project
             if (e.CloseReason != CloseReason.WindowsShutDown)
                 Application.Exit();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Gshow().Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new GuideAdd().Show();
+        }
     }
 }
