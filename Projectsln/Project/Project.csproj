@@ -50,6 +50,12 @@
     <Compile Include="Admin page.Designer.cs">
       <DependentUpon>Admin page.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminS.Designer.cs">
+      <DependentUpon>AdminS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin_reg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,12 @@
     <Compile Include="Manager Page.Designer.cs">
       <DependentUpon>Manager Page.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManagerS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerS.Designer.cs">
+      <DependentUpon>ManagerS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manager_reg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +115,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Admin page.resx">
       <DependentUpon>Admin page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminS.resx">
+      <DependentUpon>AdminS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_reg.resx">
       <DependentUpon>Admin_reg.cs</DependentUpon>
@@ -124,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Manager Page.resx">
       <DependentUpon>Manager Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerS.resx">
+      <DependentUpon>ManagerS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manager_reg.resx">
       <DependentUpon>Manager_reg.cs</DependentUpon>

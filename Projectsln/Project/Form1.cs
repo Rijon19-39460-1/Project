@@ -40,8 +40,7 @@ namespace Project
         }
 
         private void Login_Click(object sender, EventArgs e)
-        {
-               
+        {               
             Admin1.Visible = true;
             Manager1.Visible = true;
         }
@@ -54,6 +53,8 @@ namespace Project
 
         private void refresh_Click(object sender, EventArgs e)
         {
+            Admin3.Visible = false;
+            Manager3.Visible = false;
             Admin2.Visible = false;
             Manager2.Visible = false;
             Admin1.Visible = false;
@@ -76,6 +77,24 @@ namespace Project
         {
             this.Hide();
             new LManager().Show();
+        }
+
+        private void show_Click(object sender, EventArgs e)
+        {
+            Admin3.Visible = true;
+            Manager3.Visible = true;
+        }
+
+        private void Admin3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new AdminS().Show();
+        }
+
+        private void Manager3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new ManagerS().Show();
         }
     }
 }

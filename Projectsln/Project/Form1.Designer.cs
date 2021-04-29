@@ -36,6 +36,9 @@
             this.Admin1 = new System.Windows.Forms.Button();
             this.Manager1 = new System.Windows.Forms.Button();
             this.refresh = new System.Windows.Forms.Button();
+            this.show = new System.Windows.Forms.Button();
+            this.Manager3 = new System.Windows.Forms.Button();
+            this.Admin3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -43,9 +46,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(224, 60);
+            this.label1.Location = new System.Drawing.Point(224, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(267, 29);
+            this.label1.Size = new System.Drawing.Size(325, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome to T Agency";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -55,7 +58,7 @@
             this.Login.BackColor = System.Drawing.Color.OrangeRed;
             this.Login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Login.ForeColor = System.Drawing.Color.White;
-            this.Login.Location = new System.Drawing.Point(263, 132);
+            this.Login.Location = new System.Drawing.Point(263, 109);
             this.Login.Name = "Login";
             this.Login.Size = new System.Drawing.Size(173, 63);
             this.Login.TabIndex = 1;
@@ -68,7 +71,7 @@
             this.Registration.BackColor = System.Drawing.Color.OrangeRed;
             this.Registration.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Registration.ForeColor = System.Drawing.Color.White;
-            this.Registration.Location = new System.Drawing.Point(263, 261);
+            this.Registration.Location = new System.Drawing.Point(263, 238);
             this.Registration.Name = "Registration";
             this.Registration.Size = new System.Drawing.Size(173, 63);
             this.Registration.TabIndex = 2;
@@ -81,7 +84,7 @@
             this.Admin2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Admin2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Admin2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Admin2.Location = new System.Drawing.Point(207, 330);
+            this.Admin2.Location = new System.Drawing.Point(207, 307);
             this.Admin2.Name = "Admin2";
             this.Admin2.Size = new System.Drawing.Size(143, 47);
             this.Admin2.TabIndex = 3;
@@ -95,7 +98,7 @@
             this.Manager2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Manager2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Manager2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Manager2.Location = new System.Drawing.Point(356, 330);
+            this.Manager2.Location = new System.Drawing.Point(356, 307);
             this.Manager2.Name = "Manager2";
             this.Manager2.Size = new System.Drawing.Size(143, 46);
             this.Manager2.TabIndex = 4;
@@ -109,7 +112,7 @@
             this.Admin1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Admin1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Admin1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Admin1.Location = new System.Drawing.Point(207, 201);
+            this.Admin1.Location = new System.Drawing.Point(207, 178);
             this.Admin1.Name = "Admin1";
             this.Admin1.Size = new System.Drawing.Size(143, 46);
             this.Admin1.TabIndex = 5;
@@ -123,7 +126,7 @@
             this.Manager1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Manager1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Manager1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Manager1.Location = new System.Drawing.Point(356, 201);
+            this.Manager1.Location = new System.Drawing.Point(356, 178);
             this.Manager1.Name = "Manager1";
             this.Manager1.Size = new System.Drawing.Size(143, 46);
             this.Manager1.TabIndex = 6;
@@ -139,18 +142,63 @@
             this.refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 4.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.refresh.Location = new System.Drawing.Point(12, 12);
             this.refresh.Name = "refresh";
-            this.refresh.Size = new System.Drawing.Size(64, 30);
+            this.refresh.Size = new System.Drawing.Size(63, 30);
             this.refresh.TabIndex = 7;
             this.refresh.Text = "Refresh";
             this.refresh.UseVisualStyleBackColor = false;
             this.refresh.Click += new System.EventHandler(this.refresh_Click);
             // 
+            // show
+            // 
+            this.show.BackColor = System.Drawing.Color.OrangeRed;
+            this.show.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.show.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.show.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.show.Location = new System.Drawing.Point(263, 370);
+            this.show.Name = "show";
+            this.show.Size = new System.Drawing.Size(173, 63);
+            this.show.TabIndex = 8;
+            this.show.Text = "Show employee details";
+            this.show.UseVisualStyleBackColor = false;
+            this.show.Click += new System.EventHandler(this.show_Click);
+            // 
+            // Manager3
+            // 
+            this.Manager3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Manager3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Manager3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Manager3.Location = new System.Drawing.Point(356, 439);
+            this.Manager3.Name = "Manager3";
+            this.Manager3.Size = new System.Drawing.Size(143, 46);
+            this.Manager3.TabIndex = 10;
+            this.Manager3.Text = "Manager";
+            this.Manager3.UseVisualStyleBackColor = false;
+            this.Manager3.Visible = false;
+            this.Manager3.Click += new System.EventHandler(this.Manager3_Click);
+            // 
+            // Admin3
+            // 
+            this.Admin3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Admin3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Admin3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Admin3.Location = new System.Drawing.Point(207, 439);
+            this.Admin3.Name = "Admin3";
+            this.Admin3.Size = new System.Drawing.Size(143, 47);
+            this.Admin3.TabIndex = 9;
+            this.Admin3.Text = "Admin";
+            this.Admin3.UseVisualStyleBackColor = false;
+            this.Admin3.Visible = false;
+            this.Admin3.Click += new System.EventHandler(this.Admin3_Click);
+            // 
             // Welcome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(748, 445);
+            this.ClientSize = new System.Drawing.Size(748, 537);
+            this.Controls.Add(this.Manager3);
+            this.Controls.Add(this.Admin3);
+            this.Controls.Add(this.show);
             this.Controls.Add(this.refresh);
             this.Controls.Add(this.Manager1);
             this.Controls.Add(this.Admin1);
@@ -180,6 +228,9 @@
         private System.Windows.Forms.Button Admin1;
         private System.Windows.Forms.Button Manager1;
         private System.Windows.Forms.Button refresh;
+        private System.Windows.Forms.Button show;
+        private System.Windows.Forms.Button Manager3;
+        private System.Windows.Forms.Button Admin3;
     }
 }
 
