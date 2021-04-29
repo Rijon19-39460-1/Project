@@ -37,31 +37,33 @@
             // dtCustomer
             // 
             this.dtCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtCustomer.Location = new System.Drawing.Point(34, 117);
+            this.dtCustomer.Location = new System.Drawing.Point(32, 102);
             this.dtCustomer.Name = "dtCustomer";
             this.dtCustomer.Size = new System.Drawing.Size(404, 263);
             this.dtCustomer.TabIndex = 0;
             // 
             // btnLoad
             // 
-            this.btnLoad.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoad.Location = new System.Drawing.Point(111, 62);
+            this.btnLoad.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnLoad.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoad.Location = new System.Drawing.Point(126, 49);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(87, 34);
             this.btnLoad.TabIndex = 1;
             this.btnLoad.Text = "Load";
-            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.UseVisualStyleBackColor = false;
             this.btnLoad.Click += new System.EventHandler(this.LoadData_Click);
             // 
             // btnBack
             // 
-            this.btnBack.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(238, 62);
+            this.btnBack.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnBack.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(240, 49);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(87, 34);
             this.btnBack.TabIndex = 2;
             this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // Form2

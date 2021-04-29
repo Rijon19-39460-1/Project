@@ -41,5 +41,11 @@ namespace Project
             this.Hide();
             new Form2().Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Customer_Details_Update().Show();
+        }
     }
 }
