@@ -47,5 +47,11 @@ namespace Project
             this.Hide();
             new Customer_Details_Update().Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Mpage().Show();
+        }
     }
 }

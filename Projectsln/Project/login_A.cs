@@ -67,7 +67,7 @@ namespace Project
                 {
 
                     this.Hide();
-                    new Manager_page().Show();
+                    new Admin_page().Show();
                 }
                 else
                 {

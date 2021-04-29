@@ -33,5 +33,11 @@ namespace Project
             this.Hide();
             new Tour_guide().Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Welcome().Show();
+        }
     }
 }
