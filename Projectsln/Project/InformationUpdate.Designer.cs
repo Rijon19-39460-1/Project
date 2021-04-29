@@ -43,6 +43,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.tbSearch = new System.Windows.Forms.TextBox();
+            this.btnsearch = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnBack
@@ -54,6 +55,7 @@
             this.btnBack.TabIndex = 27;
             this.btnBack.Text = "BACK";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnUpdate
             // 
@@ -180,12 +182,24 @@
             this.tbSearch.Size = new System.Drawing.Size(156, 20);
             this.tbSearch.TabIndex = 29;
             // 
+            // btnsearch
+            // 
+            this.btnsearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsearch.Location = new System.Drawing.Point(454, 89);
+            this.btnsearch.Name = "btnsearch";
+            this.btnsearch.Size = new System.Drawing.Size(75, 23);
+            this.btnsearch.TabIndex = 30;
+            this.btnsearch.Text = "SEARCH";
+            this.btnsearch.UseVisualStyleBackColor = true;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
+            // 
             // InformationUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(584, 441);
+            this.Controls.Add(this.btnsearch);
             this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnBack);
@@ -225,5 +239,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tbSearch;
+        private System.Windows.Forms.Button btnsearch;
     }
 }
