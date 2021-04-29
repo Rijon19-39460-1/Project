@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dtCustomer = new System.Windows.Forms.DataGridView();
+            this.dtA = new System.Windows.Forms.DataGridView();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnLoad = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dtCustomer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtA)).BeginInit();
             this.SuspendLayout();
             // 
-            // dtCustomer
+            // dtA
             // 
-            this.dtCustomer.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dtCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtCustomer.Location = new System.Drawing.Point(4, 79);
-            this.dtCustomer.Margin = new System.Windows.Forms.Padding(4);
-            this.dtCustomer.Name = "dtCustomer";
-            this.dtCustomer.Size = new System.Drawing.Size(539, 324);
-            this.dtCustomer.TabIndex = 3;
+            this.dtA.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dtA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtA.Location = new System.Drawing.Point(4, 79);
+            this.dtA.Margin = new System.Windows.Forms.Padding(4);
+            this.dtA.Name = "dtA";
+            this.dtA.Size = new System.Drawing.Size(539, 324);
+            this.dtA.TabIndex = 3;
             // 
             // btnBack
             // 
@@ -70,6 +70,7 @@
             this.btnLoad.TabIndex = 6;
             this.btnLoad.Text = "Load";
             this.btnLoad.UseVisualStyleBackColor = false;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // AdminS
             // 
@@ -79,17 +80,17 @@
             this.ClientSize = new System.Drawing.Size(546, 485);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnLoad);
-            this.Controls.Add(this.dtCustomer);
+            this.Controls.Add(this.dtA);
             this.Name = "AdminS";
             this.Text = "Admin Details";
-            ((System.ComponentModel.ISupportInitialize)(this.dtCustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtA)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dtCustomer;
+        private System.Windows.Forms.DataGridView dtA;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnLoad;
     }

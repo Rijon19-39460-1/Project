@@ -59,7 +59,7 @@ namespace Project
             Manager1.Visible = false;
         }
 
-        private void Admin2_Click(object sender, EventArgs e)
+        /*private void Admin2_Click(object sender, EventArgs e)
         {
             this.Hide();
             new REGISTRATION_A().Show();
@@ -69,7 +69,7 @@ namespace Project
         {
             this.Hide();
             new Registration_M().Show();
-        }
+        }*/
 
         private void Manager1_Click(object sender, EventArgs e)
         {
@@ -99,6 +99,11 @@ namespace Project
         {
             this.Hide();
             new REGISTRATIONam().Show();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -16,7 +16,12 @@ namespace Project
         {
             InitializeComponent();
         }
-
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if (e.CloseReason != CloseReason.WindowsShutDown)
+                Application.Exit();
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();

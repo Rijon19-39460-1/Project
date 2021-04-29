@@ -30,8 +30,8 @@
         {
             this.btnBack = new System.Windows.Forms.Button();
             this.btnLoad = new System.Windows.Forms.Button();
-            this.dtCustomer = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dtCustomer)).BeginInit();
+            this.dtM = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dtM)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBack
@@ -60,16 +60,17 @@
             this.btnLoad.TabIndex = 9;
             this.btnLoad.Text = "Load";
             this.btnLoad.UseVisualStyleBackColor = false;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
-            // dtCustomer
+            // dtM
             // 
-            this.dtCustomer.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dtCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtCustomer.Location = new System.Drawing.Point(6, 84);
-            this.dtCustomer.Margin = new System.Windows.Forms.Padding(4);
-            this.dtCustomer.Name = "dtCustomer";
-            this.dtCustomer.Size = new System.Drawing.Size(539, 324);
-            this.dtCustomer.TabIndex = 8;
+            this.dtM.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dtM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtM.Location = new System.Drawing.Point(6, 84);
+            this.dtM.Margin = new System.Windows.Forms.Padding(4);
+            this.dtM.Name = "dtM";
+            this.dtM.Size = new System.Drawing.Size(539, 324);
+            this.dtM.TabIndex = 8;
             // 
             // ManagerS
             // 
@@ -79,11 +80,11 @@
             this.ClientSize = new System.Drawing.Size(550, 492);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnLoad);
-            this.Controls.Add(this.dtCustomer);
+            this.Controls.Add(this.dtM);
             this.Name = "ManagerS";
             this.Text = "Manager Details";
             this.Load += new System.EventHandler(this.ManagerS_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dtCustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtM)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -92,7 +93,7 @@
 
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnLoad;
-        private System.Windows.Forms.DataGridView dtCustomer;
+        private System.Windows.Forms.DataGridView dtM;
 
     }
 }
