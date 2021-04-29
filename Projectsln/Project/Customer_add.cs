@@ -33,11 +33,10 @@ namespace Project
             string pname = tbPName.Text;
             string cphone = tbCPhone.Text;
             string cemail = tbCEmail.Text;
-            string ptime = dtpPTime.Text;
+            string ptime = dt1.Text;
 
-            int id = Convert.ToInt32(pid);
-
-            string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
+            string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
+            //string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
             SqlConnection conn = new SqlConnection(connString);
             
             try 
@@ -51,7 +50,7 @@ namespace Project
                 MessageBox.Show(ex.Message);
             }
 
-            string query = string.Format("insert into Customer values ('{0}','{1}','{2}','{3}','{4}','{5}')", cname,pname, id, cphone, cemail, ptime);
+            string query = string.Format("insert into Customer values ('{0}','{1}','{2}','{3}','{4}','{5}')", cname, pname, pid, cphone, cemail, ptime);
 
             try
             {

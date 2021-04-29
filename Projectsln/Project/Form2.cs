@@ -27,46 +27,31 @@ namespace Project
 
         private void LoadData_Click(object sender, EventArgs e)
         {
-            string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
+            string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
+            //string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
             SqlConnection conn = new SqlConnection(connString);
             List<Customer1> Customer = new List<Customer1>();
-            try 
-            {
+
 
                 conn.Open();
 
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
 
             string query = "select * from Customer ";
-
-            try
-            {
                 SqlCommand cmd = new SqlCommand(query,conn);
                 SqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
                 {
                     Customer1 c = new Customer1();
-                    c.CustomerId = reader.GetInt32(reader.GetOrdinal("CustomerId"));
-                    c.CustomerName = reader.GetString(reader.GetOrdinal("CustomerName"));
-                    c.PackageName = reader.GetString(reader.GetOrdinal("PackageName"));
-                    c.PackageId = reader.GetInt32(reader.GetOrdinal("PackageId"));                    
-                    c.CustomerPhone = reader.GetString(reader.GetOrdinal("CustomerPhone"));
-                    c.CustomerEmail = reader.GetString(reader.GetOrdinal("CustomerEmail"));
-                    c.PurchaseTime = reader.GetString(reader.GetOrdinal("PurchaseTime"));
+                    c.Customer_Id = reader.GetInt32(reader.GetOrdinal("Customer_Id"));
+                    c.Customer_name = reader.GetString(reader.GetOrdinal("Customer_name"));
+                    c.Pack_name = reader.GetString(reader.GetOrdinal("Pack_name"));
+                    c.Pack_id = reader.GetString(reader.GetOrdinal("Pack_id"));
+                    c.Customer_phone = reader.GetString(reader.GetOrdinal("Customer_phone"));
+                    c.Customer_email = reader.GetString(reader.GetOrdinal("Customer_email"));
+                    c.Purchase_time = reader.GetString(reader.GetOrdinal("Purchase_time"));
                     Customer.Add(c);
                 }
-            }
-
-
-            catch (Exception ex)
-            {
-                MessageBox.Show("ex.Message");
-            }
 
             conn.Close();
             dtCustomer.DataSource = Customer;
