@@ -31,9 +31,9 @@ namespace Project
 
         private void btnnext_Click(object sender, EventArgs e)
         {
-            string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
+            //string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
             //string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
-            //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
+            string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
             SqlConnection conn = new SqlConnection(connString);
 
                 conn.Open();
@@ -145,9 +145,9 @@ namespace Project
             string dob = tbdob.Text;
             string fullname = string.Concat(fname, " ", lname);
 
-            string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
+            //string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
             //string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
-            //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
+            string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
 
             SqlConnection conn = new SqlConnection(connString);
             conn.Open();
@@ -165,6 +165,16 @@ namespace Project
         }
 
         private void Aedit_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Invalid_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbuser_TextChanged(object sender, EventArgs e)
         {
 
         }
