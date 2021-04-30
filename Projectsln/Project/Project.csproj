@@ -197,6 +197,12 @@
     <Compile Include="Tour_package_show.Designer.cs">
       <DependentUpon>Tour_package_show.cs</DependentUpon>
     </Compile>
+    <Compile Include="TP_Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TP_Delete.Designer.cs">
+      <DependentUpon>TP_Delete.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminS.resx">
       <DependentUpon>AdminS.cs</DependentUpon>
     </EmbeddedResource>
@@ -278,6 +284,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tour_package_show.resx">
       <DependentUpon>Tour_package_show.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TP_Delete.resx">
+      <DependentUpon>TP_Delete.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

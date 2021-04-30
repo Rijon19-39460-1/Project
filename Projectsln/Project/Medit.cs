@@ -32,8 +32,13 @@ namespace Project
         private void btnnext_Click(object sender, EventArgs e)
         {
             //string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
-            string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
+            //string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
+<<<<<<< HEAD
+            string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
+=======
             //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
+            string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
+>>>>>>> f51ac68101e4815dc15b4db2855997c760a5e5b7
             SqlConnection conn = new SqlConnection(connString);
 
             conn.Open();
@@ -145,9 +150,9 @@ namespace Project
             string dob = tbdob.Text;
             string fullname = string.Concat(fname, " ", lname);
 
-            string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
+            //string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
             //string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
-            //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
+            string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
 
             SqlConnection conn = new SqlConnection(connString);
             conn.Open();
