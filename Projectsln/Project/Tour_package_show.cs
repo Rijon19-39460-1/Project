@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Collections;
 
 namespace Project
 {
-    public partial class CustomerInfo : Form
+    public partial class Tour_package_show : Form
     {
-        public CustomerInfo()
+        public Tour_package_show()
         {
             InitializeComponent();
         }
+
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             base.OnFormClosing(e);
@@ -25,68 +25,51 @@ namespace Project
                 Application.Exit();
         }
 
-        private void btnAdd_Click (object sender, EventArgs e)
+        private void btnLoad_Click(object sender, EventArgs e)
         {
-            
-            string cname = tbCName.Text;
-            string pid = tbPId.Text;
-            string pname = tbPName.Text;
-            string cphone = tbCPhone.Text;
-            string cemail = tbCEmail.Text;
-            string ptime = dt1.Text;
-
             //string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
             //string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
             //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
             string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
             SqlConnection conn = new SqlConnection(connString);
-            
-            try 
-            {
-
-                conn.Open();
-
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-            string query = string.Format("insert into Customer values ('{0}','{1}','{2}','{3}','{4}','{5}')", cname, pname, pid, cphone, cemail, ptime);
-
+            List<PackShow> Package = new List<PackShow>();
             try
             {
-
-                SqlCommand cmd = new SqlCommand(query,conn);
-                int r = cmd.ExecuteNonQuery();
-
-                if (r > 0)
-                {
-                    MessageBox.Show("Customer Information inserted");
-                }
-                else
-                {
-                    MessageBox.Show("Failed to insert customer information");
-                }
-
+                conn.Open();
             }
-
-
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-
+            string query = "select * from Package";
+            try
+            {
+                SqlCommand cmd = new SqlCommand(query, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    PackShow p = new PackShow();
+                    p.Pack_id = reader.GetInt32(reader.GetOrdinal("Pack_id"));
+                    p.Pack_name = reader.GetString(reader.GetOrdinal("Pack_name"));
+                    p.Tour_duration = reader.GetString(reader.GetOrdinal("Tour_duration"));
+                    p.Pack_price = reader.GetString(reader.GetOrdinal("Pack_price"));
+                    p.pack_feature = reader.GetString(reader.GetOrdinal("pack_feature"));
+                    Package.Add(p);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
             conn.Close();
+            dtPackage.DataSource = Package;
         }
+        
 
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new Manager_page().Show();
+            new Admin_page().Show();
         }
-
-
-        
     }
 }
