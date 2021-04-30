@@ -31,7 +31,8 @@ namespace Project
 
         private void btnDel_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            new TP_Delete().Show();
         }
 
         private void btnUp_Click(object sender, EventArgs e)

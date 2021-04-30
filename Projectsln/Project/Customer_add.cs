@@ -27,12 +27,12 @@ namespace Project
 
         private void btnAdd_Click (object sender, EventArgs e)
         {
-            
-            string cname = tbCName.Text;
-            string pid = tbPId.Text;
-            string pname = tbPName.Text;
-            string cphone = tbCPhone.Text;
-            string cemail = tbCEmail.Text;
+
+            string cname = tbCName.Text.Trim();
+            string pid = tbPId.Text.Trim();
+            string pname = tbPName.Text.Trim();
+            string cphone = tbCPhone.Text.Trim();
+            string cemail = tbCEmail.Text.Trim();
             string ptime = dt1.Text;
 
             //string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";

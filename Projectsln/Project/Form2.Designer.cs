@@ -36,6 +36,7 @@
             // 
             // dtCustomer
             // 
+            this.dtCustomer.BackgroundColor = System.Drawing.Color.LightGray;
             this.dtCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtCustomer.Location = new System.Drawing.Point(32, 102);
             this.dtCustomer.Name = "dtCustomer";
@@ -46,7 +47,7 @@
             // 
             this.btnLoad.BackColor = System.Drawing.Color.LimeGreen;
             this.btnLoad.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoad.Location = new System.Drawing.Point(126, 49);
+            this.btnLoad.Location = new System.Drawing.Point(117, 49);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(87, 34);
             this.btnLoad.TabIndex = 1;
@@ -58,7 +59,7 @@
             // 
             this.btnBack.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btnBack.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(240, 49);
+            this.btnBack.Location = new System.Drawing.Point(270, 49);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(87, 34);
             this.btnBack.TabIndex = 2;
