@@ -46,7 +46,7 @@ namespace Project
             string pass = password.Text;
 
             //string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
-            string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
+            //string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
 
             //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
             //string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
@@ -57,7 +57,7 @@ namespace Project
             //string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
             //string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
             //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
-            //string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
+            string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
 
 
 
