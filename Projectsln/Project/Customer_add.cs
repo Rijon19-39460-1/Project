@@ -25,7 +25,7 @@ namespace Project
                 Application.Exit();
         }
 
-        private void btnAdd_Click (object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
 
             string cname = tbCName.Text.Trim();
@@ -40,14 +40,14 @@ namespace Project
             //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
             //string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
             SqlConnection conn = new SqlConnection(connString);
-            
-            try 
+
+            try
             {
 
                 conn.Open();
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -57,7 +57,7 @@ namespace Project
             try
             {
 
-                SqlCommand cmd = new SqlCommand(query,conn);
+                SqlCommand cmd = new SqlCommand(query, conn);
                 int r = cmd.ExecuteNonQuery();
 
                 if (r > 0)
@@ -78,7 +78,9 @@ namespace Project
             }
 
             conn.Close();
+            RefreshControls();
         }
+
 
         private void btnBack_Click(object sender, EventArgs e)
         {
@@ -86,7 +88,18 @@ namespace Project
             new Manager_page().Show();
         }
 
+        void RefreshControls()
+        {
+            tbCName.Text = "";
+            tbPId.Text = "";
+            tbPName.Text = "";
+            tbCPhone.Text = "";
+            tbCEmail.Text = "";
+            dt1.Text = "";
+           tbCName.Focus();
+        }
 
-        
-    }
+   }
+
 }
+

@@ -53,5 +53,11 @@ namespace Project
             this.Hide();
             new Mpage().Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Customer_Details_Delete().Show();
+        }
     }
 }

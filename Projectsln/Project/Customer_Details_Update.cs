@@ -97,6 +97,7 @@ namespace Project
             int r = cmd.ExecuteNonQuery();
             MessageBox.Show("Information Updated");
             conn.Close();
+            RefreshControls();
 
         }
 
@@ -104,6 +105,18 @@ namespace Project
         {
             this.Hide();
             new Manager_page().Show();
+        }
+        void RefreshControls()
+        {
+            tbSrchCId.Text = "";
+            tbCNameUpdate.Text = "";
+            tbPIdUpdate.Text = "";
+            tbPNameUpdate.Text = "";
+            tbCPhoneUpdate.Text = "";
+            tbCEmailUpdate.Text = "";
+            dtUpdate.Text = "";
+
+            tbSrchCId.Focus();
         }
     }
 }

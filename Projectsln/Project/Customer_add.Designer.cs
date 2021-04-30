@@ -182,7 +182,7 @@
             // dt1
             // 
             this.dt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dt1.Location = new System.Drawing.Point(29, 299);
+            this.dt1.Location = new System.Drawing.Point(34, 299);
             this.dt1.Margin = new System.Windows.Forms.Padding(2);
             this.dt1.Name = "dt1";
             this.dt1.Size = new System.Drawing.Size(230, 22);
