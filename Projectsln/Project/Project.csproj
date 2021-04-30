@@ -62,6 +62,19 @@
     <Compile Include="Admin_reg.Designer.cs">
       <DependentUpon>Admin_reg.cs</DependentUpon>
     </Compile>
+    <Compile Include="Aedit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aedit.Designer.cs">
+      <DependentUpon>Aedit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apage.Designer.cs">
+      <DependentUpon>Apage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aReg.cs" />
     <Compile Include="Ashowcs.cs" />
     <Compile Include="Customer1.cs" />
     <Compile Include="Customer_add.cs">
@@ -143,6 +156,13 @@
     <Compile Include="Manager_reg.Designer.cs">
       <DependentUpon>Manager_reg.cs</DependentUpon>
     </Compile>
+    <Compile Include="Medit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medit.Designer.cs">
+      <DependentUpon>Medit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mReg.cs" />
     <Compile Include="Mshow.cs" />
     <Compile Include="PackShow.cs" />
     <Compile Include="Program.cs" />
@@ -179,6 +199,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_reg.resx">
       <DependentUpon>Admin_reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aedit.resx">
+      <DependentUpon>Aedit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apage.resx">
+      <DependentUpon>Apage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Customer_add.resx">
       <DependentUpon>Customer_add.cs</DependentUpon>
@@ -218,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Manager_reg.resx">
       <DependentUpon>Manager_reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medit.resx">
+      <DependentUpon>Medit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

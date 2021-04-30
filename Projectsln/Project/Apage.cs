@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Project
 {
-    public partial class Mpage : Form
+    public partial class Apage : Form
     {
-        public Mpage()
+        public Apage()
         {
             InitializeComponent();
         }
@@ -22,16 +22,15 @@ namespace Project
             if (e.CloseReason != CloseReason.WindowsShutDown)
                 Application.Exit();
         }
+        private void Apage_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new Manager_page().Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            new Tour_guide().Show();
+            new Admin_page().Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -40,7 +39,7 @@ namespace Project
             new Welcome().Show();
         }
 
-        private void Mpage_Load(object sender, EventArgs e)
+        private void Apage_Load_1(object sender, EventArgs e)
         {
 
         }
@@ -48,7 +47,7 @@ namespace Project
         private void Edit_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            new Medit().Show();
+            new Aedit().Show();
         }
     }
 }
