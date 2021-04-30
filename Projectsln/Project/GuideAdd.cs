@@ -38,13 +38,13 @@ namespace Project
 
 
             //string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
-            //string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
-<<<<<<< HEAD
+            string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
+
             //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
-            string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
-=======
-            string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
->>>>>>> d3b4e61d6d4399cb1abaa80d0a29e6b737fa760b
+            //string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
+
+            //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
+
             SqlConnection conn = new SqlConnection(connString);
             try
             {

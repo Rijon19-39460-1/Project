@@ -32,8 +32,8 @@ namespace Project
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            //string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project; Integrated Security=true;";
-            string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
+            string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project; Integrated Security=true;";
+            //string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
             SqlConnection conn = new SqlConnection(connString);
 
             try
@@ -81,12 +81,12 @@ namespace Project
         private void btnUpdate_Click(object sender, EventArgs e)
         {
 
-            int id = Int32.Parse(tbSrchCId.Text); ;
-            string cname = tbCNameUpdate.Text;
-            string pid = tbPIdUpdate.Text;
-            string pname = tbPNameUpdate.Text;
-            string cphone = tbCPhoneUpdate.Text;
-            string cemail = tbCEmailUpdate.Text;
+            int id = Int32.Parse(tbSrchCId.Text);
+            string cname = tbCNameUpdate.Text.Trim();
+            string pid = tbPIdUpdate.Text.Trim();
+            string pname = tbPNameUpdate.Text.Trim();
+            string cphone = tbCPhoneUpdate.Text.Trim();
+            string cemail = tbCEmailUpdate.Text.Trim();
             string ptime = dtUpdate.Text;
 
             string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project; Integrated Security=true;";
