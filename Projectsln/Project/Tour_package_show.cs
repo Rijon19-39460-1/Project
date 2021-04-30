@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Collections;
 
 namespace Project
 {
-    public partial class AdminS : Form
+    public partial class Tour_package_show : Form
     {
-        public AdminS()
+        public Tour_package_show()
         {
             InitializeComponent();
         }
+
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             base.OnFormClosing(e);
@@ -25,20 +25,14 @@ namespace Project
                 Application.Exit();
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            new Welcome().Show();
-        }
-
         private void btnLoad_Click(object sender, EventArgs e)
         {
-            string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
+            //string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
             //string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
             //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
-            //string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
+            string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
             SqlConnection conn = new SqlConnection(connString);
-            List<Ashowcs> Admin = new List<Ashowcs>();
+            List<PackShow> Package = new List<PackShow>();
             try
             {
                 conn.Open();
@@ -47,26 +41,20 @@ namespace Project
             {
                 MessageBox.Show(ex.Message);
             }
-            string query = "select * from Admin";
+            string query = "select * from Package";
             try
             {
                 SqlCommand cmd = new SqlCommand(query, conn);
                 SqlDataReader reader = cmd.ExecuteReader();
-
                 while (reader.Read())
                 {
-                    Ashowcs a = new Ashowcs();
-                    a.Id = reader.GetInt32(reader.GetOrdinal("Id"));
-                    a.Fname = reader.GetString(reader.GetOrdinal("Fname"));
-                    a.Lname = reader.GetString(reader.GetOrdinal("Lname"));
-                    a.Full_name = reader.GetString(reader.GetOrdinal("Full_name"));
-                    a.Gender = reader.GetString(reader.GetOrdinal("Gender"));
-                    a.DOB = reader.GetString(reader.GetOrdinal("DOB"));
-                    a.Nationality = reader.GetString(reader.GetOrdinal("Nationality"));
-                    a.Address = reader.GetString(reader.GetOrdinal("Address"));
-                    a.Phone = reader.GetString(reader.GetOrdinal("Phone"));
-                    a.Email = reader.GetString(reader.GetOrdinal("Email"));
-                    Admin.Add(a);
+                    PackShow p = new PackShow();
+                    p.Pack_id = reader.GetInt32(reader.GetOrdinal("Pack_id"));
+                    p.Pack_name = reader.GetString(reader.GetOrdinal("Pack_name"));
+                    p.Tour_duration = reader.GetString(reader.GetOrdinal("Tour_duration"));
+                    p.Pack_price = reader.GetString(reader.GetOrdinal("Pack_price"));
+                    p.pack_feature = reader.GetString(reader.GetOrdinal("pack_feature"));
+                    Package.Add(p);
                 }
             }
             catch (Exception ex)
@@ -74,7 +62,14 @@ namespace Project
                 MessageBox.Show(ex.Message);
             }
             conn.Close();
-            dtA.DataSource = Admin;
+            dtPackage.DataSource = Package;
+        }
+        
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Admin_page().Show();
         }
     }
 }

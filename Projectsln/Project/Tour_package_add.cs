@@ -8,92 +8,88 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Collections;
 
 namespace Project
 {
-    public partial class Registration_M : Form
+    public partial class Tour_package_add : Form
     {
-        string gender;
-        public Registration_M()
+        public Tour_package_add()
         {
             InitializeComponent();
         }
-        protected override void OnFormClosing(FormClosingEventArgs e)
+          protected override void OnFormClosing(FormClosingEventArgs e)
         {
             base.OnFormClosing(e);
             if (e.CloseReason != CloseReason.WindowsShutDown)
                 Application.Exit();
         }
 
-        private void Back_Click(object sender, EventArgs e)
+        private void btnAdd_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
-            new REGISTRATIONam().Show();
-        }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            string Fname = fname.Text;
-            string Lname = lname.Text;
-            string fullname = string.Concat(Fname, " ", Lname);
-            string padress = adress.Text;
-            string ntion = nation.Text;
-            string Dob = dt1.Text;
-            string phn1 = ph1.Text;
-            string phn2 = ph2.Text;
-            string phn = string.Concat(phn1, phn2);
-            string username = uname.Text;
-            string mail = email.Text;
-            string pass = password.Text;
-            if (rd1.Checked == true)
-            {
-                gender = rd1.Text;
-            }
-            else if (rd2.Checked == true)
-            {
-                gender = rd2.Text;
-            }
+            string packname = tbPackName.Text;
+            string tourd = cbTourDuration.Text;
+            string packprice = tbPackPrice.Text;
+            string packfeat = cbPackFeat.Text;
+
+
 
             //string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
             //string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
             //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
             string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
-
-
             SqlConnection conn = new SqlConnection(connString);
+
             try
             {
+
                 conn.Open();
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            string query = string.Format("insert into Manager values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}')", Fname, Lname, fullname, gender, Dob, ntion, padress, phn, mail, username, pass);
+
+            string query = string.Format("insert into Package values ('{0}','{1}','{2}','{3}')", packname, tourd, packprice, packfeat);
+
             try
             {
+
                 SqlCommand cmd = new SqlCommand(query, conn);
                 int r = cmd.ExecuteNonQuery();
+
                 if (r > 0)
                 {
-                    MessageBox.Show("Registration Done!!");
+                    MessageBox.Show("Package Details inserted");
                 }
                 else
                 {
-                    MessageBox.Show("Failed to Registration. Try again...");
+                    MessageBox.Show("Failed to insert Package Details");
                 }
+
             }
+
+
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+
             conn.Close();
-        }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        }
+        
+
+        private void btnBack_Click_1(object sender, EventArgs e)
         {
-
+            this.Hide();
+            new Admin_page().Show();
         }
+
+
+        
     }
 }
+
+    

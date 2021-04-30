@@ -44,17 +44,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin page.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin page.Designer.cs">
-      <DependentUpon>Admin page.cs</DependentUpon>
-    </Compile>
     <Compile Include="AdminS.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AdminS.Designer.cs">
       <DependentUpon>AdminS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_page.Designer.cs">
+      <DependentUpon>Admin_page.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin_reg.cs">
       <SubType>Form</SubType>
@@ -164,6 +164,7 @@
     </Compile>
     <Compile Include="mReg.cs" />
     <Compile Include="Mshow.cs" />
+    <Compile Include="PackShow.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="REGISTRATIONam.cs">
@@ -178,11 +179,23 @@
     <Compile Include="Tour_guide.Designer.cs">
       <DependentUpon>Tour_guide.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Admin page.resx">
-      <DependentUpon>Admin page.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="Tour_package_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tour_package_add.Designer.cs">
+      <DependentUpon>Tour_package_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tour_package_show.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tour_package_show.Designer.cs">
+      <DependentUpon>Tour_package_show.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminS.resx">
       <DependentUpon>AdminS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_page.resx">
+      <DependentUpon>Admin_page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_reg.resx">
       <DependentUpon>Admin_reg.cs</DependentUpon>
@@ -250,6 +263,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tour_guide.resx">
       <DependentUpon>Tour_guide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tour_package_add.resx">
+      <DependentUpon>Tour_package_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tour_package_show.resx">
+      <DependentUpon>Tour_package_show.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
