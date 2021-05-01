@@ -212,7 +212,7 @@
             this.Name = "CustomerInfo";
             this.Text = "Customer Info";
             this.TransparencyKey = System.Drawing.Color.MintCream;
-            this.Load += new System.EventHandler(this.btnAdd_Click);
+            //this.Load += new System.EventHandler(this.btnAdd_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
