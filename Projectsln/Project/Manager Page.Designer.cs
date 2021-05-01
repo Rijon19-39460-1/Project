@@ -40,7 +40,7 @@
             // 
             this.button4.BackColor = System.Drawing.SystemColors.ControlDark;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(194, 241);
+            this.button4.Location = new System.Drawing.Point(194, 239);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 14;
@@ -52,9 +52,9 @@
             // 
             this.button3.BackColor = System.Drawing.SystemColors.ControlDark;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(194, 189);
+            this.button3.Location = new System.Drawing.Point(194, 186);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 27);
+            this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 13;
             this.button3.Text = "UPDATE";
             this.button3.UseVisualStyleBackColor = false;
@@ -64,12 +64,13 @@
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ControlDark;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(194, 140);
+            this.button2.Location = new System.Drawing.Point(194, 137);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 12;
             this.button2.Text = "DELETE";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 

@@ -51,7 +51,7 @@
             // dtUpdate
             // 
             this.dtUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtUpdate.Location = new System.Drawing.Point(156, 269);
+            this.dtUpdate.Location = new System.Drawing.Point(156, 265);
             this.dtUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.dtUpdate.Name = "dtUpdate";
             this.dtUpdate.Size = new System.Drawing.Size(231, 21);
@@ -85,7 +85,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(39, 269);
+            this.label7.Location = new System.Drawing.Point(39, 265);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(111, 19);
             this.label7.TabIndex = 27;
@@ -112,7 +112,7 @@
             // tbCPhoneUpdate
             // 
             this.tbCPhoneUpdate.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCPhoneUpdate.Location = new System.Drawing.Point(156, 201);
+            this.tbCPhoneUpdate.Location = new System.Drawing.Point(156, 203);
             this.tbCPhoneUpdate.Name = "tbCPhoneUpdate";
             this.tbCPhoneUpdate.Size = new System.Drawing.Size(149, 23);
             this.tbCPhoneUpdate.TabIndex = 24;
@@ -121,7 +121,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(32, 201);
+            this.label5.Location = new System.Drawing.Point(32, 203);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(124, 19);
             this.label5.TabIndex = 23;
@@ -130,7 +130,7 @@
             // tbPNameUpdate
             // 
             this.tbPNameUpdate.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPNameUpdate.Location = new System.Drawing.Point(156, 169);
+            this.tbPNameUpdate.Location = new System.Drawing.Point(156, 172);
             this.tbPNameUpdate.Name = "tbPNameUpdate";
             this.tbPNameUpdate.Size = new System.Drawing.Size(141, 23);
             this.tbPNameUpdate.TabIndex = 22;
@@ -139,7 +139,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(41, 169);
+            this.label4.Location = new System.Drawing.Point(41, 172);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(109, 19);
             this.label4.TabIndex = 21;
@@ -148,7 +148,7 @@
             // tbPIdUpdate
             // 
             this.tbPIdUpdate.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPIdUpdate.Location = new System.Drawing.Point(156, 139);
+            this.tbPIdUpdate.Location = new System.Drawing.Point(156, 141);
             this.tbPIdUpdate.Name = "tbPIdUpdate";
             this.tbPIdUpdate.Size = new System.Drawing.Size(141, 23);
             this.tbPIdUpdate.TabIndex = 20;
@@ -157,7 +157,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(67, 139);
+            this.label3.Location = new System.Drawing.Point(67, 141);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 19);
             this.label3.TabIndex = 19;
