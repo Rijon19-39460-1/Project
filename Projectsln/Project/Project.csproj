@@ -107,6 +107,12 @@
     <Compile Include="Gshow.Designer.cs">
       <DependentUpon>Gshow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Guide Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guide Delete.Designer.cs">
+      <DependentUpon>Guide Delete.cs</DependentUpon>
+    </Compile>
     <Compile Include="GuideAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gshow.resx">
       <DependentUpon>Gshow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guide Delete.resx">
+      <DependentUpon>Guide Delete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GuideAdd.resx">
       <DependentUpon>GuideAdd.cs</DependentUpon>

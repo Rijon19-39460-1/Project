@@ -12,22 +12,75 @@ using System.Collections;
 
 namespace Project
 {
-    public partial class Gshow : Form
+    public partial class Guide_Delete : Form
     {
-        public Gshow()
+        public Guide_Delete()
         {
             InitializeComponent();
         }
-        protected override void OnFormClosing(FormClosingEventArgs e)
+
+         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             base.OnFormClosing(e);
             if (e.CloseReason != CloseReason.WindowsShutDown)
                 Application.Exit();
         }
 
+        private void tbTGID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DELETE_Click(object sender, EventArgs e)
+        {
+             string lbtgid = tbTGID.Text;
+            
+
+            string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
+            SqlConnection conn = new SqlConnection(connString);
+
+            try
+            {
+                conn.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            int Guide_id = Int32.Parse(tbTGID.Text);
+            string query = string.Format("delete from Guide where Tour_guide_id= " + Guide_id);
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand(query, conn);
+                int r = cmd.ExecuteNonQuery();
+                MessageBox.Show("Successfully Deleted!");
+
+            }
+
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            conn.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+        
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            //string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
+            this.Hide();
+            new Tour_guide().Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+             //string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
 
             //string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
             //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
@@ -74,19 +127,9 @@ namespace Project
                 MessageBox.Show(ex.Message);
             }
             conn.Close();
-            Dtg.DataSource = Guide;
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            new Tour_guide().Show();
-        }
-
-        private void Dtg_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-        }
-    }
+            dtgDel.DataSource = Guide;
+         }
+       }
+ }
+    
 
