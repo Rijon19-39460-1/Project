@@ -37,7 +37,8 @@ namespace Project
 
         private void btnUp_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            new TP_Update().Show();
         }
 
         private void btnShow_Click(object sender, EventArgs e)

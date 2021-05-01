@@ -209,6 +209,12 @@
     <Compile Include="TP_Delete.Designer.cs">
       <DependentUpon>TP_Delete.cs</DependentUpon>
     </Compile>
+    <Compile Include="TP_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TP_Update.Designer.cs">
+      <DependentUpon>TP_Update.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminS.resx">
       <DependentUpon>AdminS.cs</DependentUpon>
     </EmbeddedResource>
@@ -296,6 +302,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TP_Delete.resx">
       <DependentUpon>TP_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TP_Update.resx">
+      <DependentUpon>TP_Update.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -41,8 +41,12 @@ namespace Project
 
             //string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
             //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
+<<<<<<< HEAD
 
             //string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
+=======
+            string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
+>>>>>>> af7f93f99d2ac404ec0af29419e460db2543b326
             SqlConnection conn = new SqlConnection(connString);
 
             try
