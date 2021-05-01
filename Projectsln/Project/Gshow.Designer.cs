@@ -42,6 +42,7 @@
             this.Dtg.Name = "Dtg";
             this.Dtg.Size = new System.Drawing.Size(545, 237);
             this.Dtg.TabIndex = 0;
+            this.Dtg.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dtg_CellContentClick);
             // 
             // button1
             // 

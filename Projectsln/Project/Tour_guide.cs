@@ -41,5 +41,17 @@ namespace Project
             this.Hide();
             new InformationUpdate().Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Guide_Delete().Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Mpage().Show();
+        }
     }
 }
