@@ -53,6 +53,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.tbID = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.btndlt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbEmail
@@ -139,10 +140,10 @@
             this.btnBack.BackColor = System.Drawing.Color.Red;
             this.btnBack.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBack.Location = new System.Drawing.Point(226, 622);
+            this.btnBack.Location = new System.Drawing.Point(119, 622);
             this.btnBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(132, 34);
+            this.btnBack.Size = new System.Drawing.Size(351, 34);
             this.btnBack.TabIndex = 68;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -153,12 +154,12 @@
             this.btnUpdate.BackColor = System.Drawing.Color.Red;
             this.btnUpdate.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnUpdate.Location = new System.Drawing.Point(240, 580);
+            this.btnUpdate.Location = new System.Drawing.Point(119, 580);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(104, 34);
+            this.btnUpdate.Size = new System.Drawing.Size(171, 34);
             this.btnUpdate.TabIndex = 67;
-            this.btnUpdate.Text = "Update";
+            this.btnUpdate.Text = "Update Account";
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Visible = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
@@ -341,12 +342,28 @@
             this.label10.Text = "Id";
             this.label10.Visible = false;
             // 
+            // btndlt
+            // 
+            this.btndlt.BackColor = System.Drawing.Color.Red;
+            this.btndlt.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndlt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btndlt.Location = new System.Drawing.Point(298, 580);
+            this.btndlt.Margin = new System.Windows.Forms.Padding(4);
+            this.btndlt.Name = "btndlt";
+            this.btndlt.Size = new System.Drawing.Size(172, 34);
+            this.btndlt.TabIndex = 84;
+            this.btndlt.Text = "Delete Account";
+            this.btndlt.UseVisualStyleBackColor = false;
+            this.btndlt.Visible = false;
+            this.btndlt.Click += new System.EventHandler(this.btndlt_Click);
+            // 
             // Medit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(586, 666);
+            this.Controls.Add(this.btndlt);
             this.Controls.Add(this.tbID);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.tbgender);
@@ -407,6 +424,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox tbID;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btndlt;
 
     }
 }

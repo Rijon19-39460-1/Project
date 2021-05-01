@@ -26,16 +26,13 @@ namespace Project
 
         private void btnpackDel_Click(object sender, EventArgs e)
         {
-             string packid = tbTpId.Text;
-<<<<<<< HEAD
-            string packname =tbTpName.Text;
-            string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
-            //string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
-=======
+            string packid = tbTpId.Text;
             //string packname =tbTpName.Text;
 
-            string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
->>>>>>> af7f93f99d2ac404ec0af29419e460db2543b326
+            string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
+            //string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
+            //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
+            //string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";           
             SqlConnection conn = new SqlConnection(connString);
 
             try
@@ -68,8 +65,10 @@ namespace Project
 
         private void btnsrch_Click(object sender, EventArgs e)
         {
-            string connString =@"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;" ;
-
+            string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
+            //string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
+            //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
+            //string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
             SqlConnection conn = new SqlConnection(connString);
             List<PackShow> Package = new List<PackShow>();
             try

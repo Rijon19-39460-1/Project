@@ -32,7 +32,9 @@ namespace Project
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project; Integrated Security=true;";
+            string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
+            //string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
+            //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
             //string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
             SqlConnection conn = new SqlConnection(connString);
 
@@ -89,7 +91,10 @@ namespace Project
             string cemail = tbCEmailUpdate.Text.Trim();
             string ptime = dtUpdate.Text;
 
-            string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project; Integrated Security=true;";
+            string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
+            //string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
+            //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
+            //string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
             SqlConnection conn = new SqlConnection(connString);
             conn.Open();
             string query = string.Format("update Customer set Customer_name='{0}',Pack_id='{1}',Pack_name='{2}',Customer_phone='{3}',Customer_email='{4}',Purchase_time='{5}' where Customer_id={6}", cname, pid, pname, cphone, cemail, ptime, id);

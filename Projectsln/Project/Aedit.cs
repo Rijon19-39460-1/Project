@@ -31,25 +31,12 @@ namespace Project
 
         private void btnnext_Click(object sender, EventArgs e)
         {
-            //string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
 
-            string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
-
-            //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
-
-            //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
-
+            string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
             //string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
-
             //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
-
-            //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
-<<<<<<< HEAD
-
             //string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
-=======
-            string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
->>>>>>> af7f93f99d2ac404ec0af29419e460db2543b326
+
 
             SqlConnection conn = new SqlConnection(connString);
 
@@ -91,6 +78,7 @@ namespace Project
                     label9.Visible = true;
                     label10.Visible = true;
                     btnUpdate.Visible = true;
+                    btndlt.Visible = true;
 
                     tbFname.Visible = true;
                     tbLname.Visible = true;
@@ -127,6 +115,7 @@ namespace Project
                     label9.Visible = false;
                     label10.Visible = false;
                     btnUpdate.Visible = false;
+                    btndlt.Visible = false;
 
                     tbFname.Visible = false;
                     tbLname.Visible = false;
@@ -162,9 +151,10 @@ namespace Project
             string dob = tbdob.Text;
             string fullname = string.Concat(fname, " ", lname);
 
-            //string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
+            string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
             //string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
-            string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
+            //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
+            //string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
 
             SqlConnection conn = new SqlConnection(connString);
             conn.Open();
@@ -194,6 +184,46 @@ namespace Project
         private void tbuser_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btndlt_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(tbID.Text);
+
+            string connString = @"Server=LAPTOP-D3473TU4;Database=Project;Integrated Security=true;";
+            //string connString = @"Server=DESKTOP-L6S3T5O\SQLEXPRESS; Database=Project ;Integrated Security=true;";
+            //string connString = @"Server=NEEHAL\SQLEXPRESS;Database=Project;Integrated Security=true;";
+            //string connString = @"Server=DESKTOP-VCKBA6J\SQLEXPRESS; Database=Project ;Integrated Security=true;";
+            SqlConnection conn = new SqlConnection(connString);
+
+            try
+            {
+                conn.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            string query = string.Format("delete from Admin where Id= " + id);
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand(query, conn);
+                int r = cmd.ExecuteNonQuery();
+                MessageBox.Show("Successfully Deleted!");
+                this.Hide();
+                new Welcome().Show();
+
+            }
+
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            conn.Close();
         }
 
             
