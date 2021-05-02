@@ -63,7 +63,7 @@
             this.btnBack.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.Location = new System.Drawing.Point(207, 323);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(78, 28);
+            this.btnBack.Size = new System.Drawing.Size(81, 39);
             this.btnBack.TabIndex = 29;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -75,7 +75,7 @@
             this.btnUpdate.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.Location = new System.Drawing.Point(108, 323);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(78, 28);
+            this.btnUpdate.Size = new System.Drawing.Size(81, 39);
             this.btnUpdate.TabIndex = 28;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -211,11 +211,11 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btnSearch.BackColor = System.Drawing.Color.Firebrick;
             this.btnSearch.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(187, 59);
+            this.btnSearch.Location = new System.Drawing.Point(187, 53);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(78, 28);
+            this.btnSearch.Size = new System.Drawing.Size(74, 36);
             this.btnSearch.TabIndex = 33;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -225,6 +225,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(477, 374);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.tbSrchCId);

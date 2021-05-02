@@ -37,7 +37,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btnDelete.BackColor = System.Drawing.Color.LimeGreen;
             this.btnDelete.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Location = new System.Drawing.Point(208, 91);
             this.btnDelete.Name = "btnDelete";
@@ -91,6 +91,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(391, 340);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnDelete);
